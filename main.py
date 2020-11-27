@@ -99,7 +99,7 @@ def do_transfer(account_from):
         in_account(account_from)
     elif card_number_to == account_from[1]:
         print("You can't transfer money to the same account!")
-        in_account(card_number_to)
+        in_account(account_from)
     else:
         transfer_amount = int(input("Enter how much money you want to transfer:\n"))
         if account_from[3] < transfer_amount:
